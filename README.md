@@ -10,4 +10,4 @@ This project is not complete.
 
 [![Version](https://img.shields.io/badge/Version-v1.0.0-blue)]()
 
-(ttps://raw.githubusercontent.com/memecx/filedump/master/img/space-newsthing.png)
+![ImageOfThing](https://raw.githubusercontent.com/memecx/filedump/master/img/space-newsthing.png)
