@@ -1,0 +1,72 @@
+body {
+    padding-top: 42px;
+    overflow: hidden;
+}
+
+#loade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: opacity 200ms linear;
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.none {
+    display: none;
+}
+
+.wh-spc {
+    white-space: normal;
+}
+
+.content {
+    opacity: 0;
+    transition: opacity 200ms linear;
+}
+
+.loadd .content {
+    opacity: 1;
+}
+
+/* *{border: 1px inset #000;} */
+
+.navbar {
+    background-color: rgb(169, 169, 169);
+    max-height: 40px;
+    padding: 0;
+}
+
+.logothing {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#nasa, #spaceX {
+    height: calc(100vh - 44px);
+    overflow-y: auto;
+    body::-webkit-scrollbar-track
+}
+#spaceX::-webkit-scrollbar,
+#nasa::-webkit-scrollbar {
+    width: .5em;
+}
+
+#spaceX::-webkit-scrollbar-track,
+#nasa::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#spaceX::-webkit-scrollbar-thumb,
+#nasa::-webkit-scrollbar-thumb {
+    background-color: rgb(169, 169, 169);
+}
