@@ -1,6 +1,8 @@
 body {
     padding-top: 42px;
     overflow: hidden;
+    background-color: #ECEFF4;
+    font-family: 'Rubik', sans-serif;
 }
 
 #loade {
@@ -45,6 +47,10 @@ body {
     padding: 0;
 }
 
+.navbar-brand {
+    cursor: pointer;
+}
+
 .logothing {
     height: 100px;
     display: flex;
@@ -69,4 +75,13 @@ body {
 #spaceX::-webkit-scrollbar-thumb,
 #nasa::-webkit-scrollbar-thumb {
     background-color: rgb(169, 169, 169);
+}
+
+.jumbotron {
+    overflow: hidden;
+}
+
+#spaceX,
+#nasa {
+    transition: flex 200ms linear, flex-grow 200ms linear, flex-basis 200ms linear;
 }
