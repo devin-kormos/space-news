@@ -1,8 +1,10 @@
 $(document).ready(function() {
     setTimeout(function(){
-        $('body').addClass('loadd')
-        $('#loade').addClass('none')
+        $('body').addClass('loaded')
     }, 200)
+    setTimeout(function(){
+        $('#loading').addClass('none')
+    }, 400)
 })
 
 commaSeparateNumber = (val) => {

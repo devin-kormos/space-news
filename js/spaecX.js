@@ -21,7 +21,6 @@ $.ajax({
     type: "GET",
     url: "https://api.spacexdata.com/v3/launches/latest",
     success: function(data) {
-        console.log(data)
         let string = data.launch_date_utc
         let length = 10
         let trimmedString = string.substring(0, length) 
@@ -43,12 +42,11 @@ $.ajax({
         <p class="h5">Flight ${data.flight_number}:<b> ${didItBlowUp(data.launch_success)}</b></p>
         <p class="h5">Launch Site: <b>${data.launch_site.site_name_long}</b></p>
         <hr class="my-4">
-        <p class="h5"></b>The ${xd.rocket_name} had a payload of the ${xd.second_stage.payloads[0].payload_id} as well as the ${xd.second_stage.payloads[1].payload_id}</p>
         <a class="badge badge-info" href="${data.links.article_link}" target="_blank" role="button">Article</a>
-        <hr class="my-4">
-        <iframe class="mx-auto d-block rounded" src="https://www.youtube.com/embed/${data.links.youtube_id}" width="560" height="315" frameborder="0"></iframe>
+        <iframe class="mx-auto d-block rounded ytube-vid" src="https://www.youtube.com/embed/${data.links.youtube_id}" width="560" height="315" frameborder="0"></iframe>
         </div>`)
         // <img src="${data.links.flickr_images[2]}" class="img-fluid rounded mx-auto d-block" alt="launch picture">
+        // <p class="h5"></b>The ${xd.rocket_name} had a payload of the ${xd.second_stage.payloads[0].payload_id} as well as the ${xd.second_stage.payloads[1].payload_id}</p>
     },
     error: function() {
         console.log("error")

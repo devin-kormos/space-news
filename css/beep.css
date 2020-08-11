@@ -1,50 +1,79 @@
 body {
-    padding-top: 42px;
     overflow: hidden;
-    background-color: #ECEFF4;
+    background-color: rgb(59, 66, 82);
     font-family: 'Rubik', sans-serif;
+    color: rgb(236, 239, 244);
 }
 
-#loade {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    pointer-events: none;
-    transition: opacity 200ms linear;
+.my-4 {
+    border-top: 1px solid #ffffff2b;
 }
 
-.loader {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+.fill-white {
+    fill: #fff;
 }
 
 .none {
     display: none;
 }
 
-.wh-spc {
-    white-space: normal;
+#loading {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(59, 66, 82);
+    z-index: 1003;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 200ms ease-out;
+}
+.loaded #loading {
+    opacity: 0;
+}
+
+.loader {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transition: left 150ms ease-out, top 150ms ease-out, transform 150ms ease-out;
+}
+
+.loaded .loader {
+    top: 1%;
+    left: 1%;
+    transform: scale(.3)
+}
+
+
+.loaded #loading {
+    opacity: 0;
 }
 
 .content {
     opacity: 0;
-    transition: opacity 200ms linear;
+    transition: opacity 200ms ease-in;
 }
 
-.loadd .content {
+.loaded .content {
     opacity: 1;
+}
+
+.wh-spc {
+    white-space: normal;
 }
 
 /* *{border: 1px inset #000;} */
 
 .navbar {
-    background-color: rgb(169, 169, 169);
-    max-height: 40px;
-    padding: 0;
+    /* background-color: rgb(46, 52, 64); */
+    padding-top: 0;
+}
+
+.mt-neg {
+    transform: translateY(-9px)
 }
 
 .navbar-brand {
@@ -58,27 +87,33 @@ body {
 }
 
 #nasa, #spaceX {
-    height: calc(100vh - 44px);
+    height: calc(100vh - 96px);
     overflow-y: auto;
     body::-webkit-scrollbar-track
 }
-#spaceX::-webkit-scrollbar,
-#nasa::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: .5em;
 }
 
-#spaceX::-webkit-scrollbar-track,
-#nasa::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background-color: transparent;
 }
 
-#spaceX::-webkit-scrollbar-thumb,
-#nasa::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-color: rgb(169, 169, 169);
 }
 
 .jumbotron {
     overflow: hidden;
+    /* background-color: rgb(46, 52, 64); */
+    background-color: #2e34403b;
+    box-shadow: 1px 1px 1px 1px #2e34408b;
+    padding: 1rem;
+    border-radius: 0;
+}
+
+.ytube-vid {
+    max-width: calc(100% - .5rem)
 }
 
 #spaceX,
