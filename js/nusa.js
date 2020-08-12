@@ -9,7 +9,8 @@ $.ajax({
         <p class="mb-0 badge wh-spc">${data.date}<cite title="Source Title">
         <a href="${data.url}" target="_blank" class="disabled">${data.title}</a></cite>
         </blockquote>
-        <p class="h6">${data.explanation}</p></div>`)
+        <p class="h6">${data.explanation}</p>
+        <sub>ns</sub></div>`)
     },
     error: function() {
         console.log("error")

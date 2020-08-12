@@ -13,32 +13,41 @@
         <div class="loader"><img src="req/strawberry.svg" alt="Strawberry" width="160px" height="160px"></div>
     </div>
     <div class="content">
-        <nav class="navbar">
+        <nav class="navbar fixed-top">
             <a class="navbar-brand mt-neg" href="#"><img src="req/strawberry.svg" width="30" height="30" alt="Strawberry"></a>
-            
-            <a class="navbar-brand" href="#"><img src="req/SpaceX-Logo.svg" width="120" alt="spaceX Logo"></a>
-            <a class="navbar-brand" href="#"><img src="req/NASA_logo.svg" width="80" alt="nasa Logo"></a>
-
             <a href="http://www.meme.cx" target="_blank" class="mt-neg badge badge-dark"><b>memeCX</b></a>
         </nav>
         <!-- <header class="container"><p class="h3">SpaceX is space. NASA, is also space. They are things that do things with space.</p></header> -->
         <main class="container-fluid">
-            <div class="row">
+            <div id="filter" class="container fixed-top thingies d-flex justify-content-around">
+                <a class="navbar-brand" id="sx" href="#"><img src="req/SpaceX-Logo.svg" width="120" alt="spaceX Logo"></a>
+                <a class="navbar-brand" id="ns" href="#"><img src="req/NASA_logo.svg" height="40" alt="nasa Logo"></a>
+            </div>
+            <div class="row stuffs">
                 <!--col-8 & col-4-->
-                <div class="col pt-2" id="spaceX">
+                <div class="container-fluid d-flex p-2 flex-wrap">
                     <!-- <div class="container logothing"><img src="req/SpaceX-Logo.svg" class="img-fluid rounded mx-auto d-block" alt="SpaceX Logo"></div> -->
-                    <div class="container" id="sxInfo"></div>
-                    <div class="container" id="sxNews"></div>
-                    <div class="container" id="sxHis"></div>
-                    <div class="container" id="sxYt"></div>
+                    <div class="container gr-flex ns" id="nsPix"><div class="jumbotron">
+                        <h1 class="display-5 text-center">Picture of the Day</h1>
+                        <img src="${data.hdurl}" class="img-fluid rounded mx-auto d-block" alt="Picture of the Day">
+                        <blockquote class="blockquote text-center">
+                        <p class="mb-0 badge wh-spc">${data.date}<cite title="Source Title">
+                        <a href="${data.url}" target="_blank" class="disabled">${data.title}</a></cite>
+                        </blockquote>
+                        <p class="h6">${data.explanation}</p>
+                        <sub>ns</sub></div></div>
+                    <div class="container gr-flex sx" id="sxInfo"></div>
+                    <div class="container gr-flex sx" id="sxHis"></div>
+                    <div class="container gr-flex sx" id="sxNews"></div>
+                    <div class="container gr-flex sx" id="sxYt"></div>
                 </div>
-                <div class="col pt-2" id="nasa">
-                    <!-- <div class="container logothing"><img src="req/NASA_logo.svg" class="img-fluid rounded mx-auto d-block" alt="NASA Logo"></div> -->
+                <!-- <div class="col" id="nasa">
+                    <div class="container logothing"><img src="req/NASA_logo.svg" class="img-fluid rounded mx-auto d-block" alt="NASA Logo"></div>
                     <div class="container" id="nsPix"></div>
                     <div class="container" id="nsNews"></div>
                     <div class="container" id="nsImgs"></div>
                     <div class="container" id="nsWeat"></div>
-                </div>
+                </div> -->
             </div>
         </main>
     </div>

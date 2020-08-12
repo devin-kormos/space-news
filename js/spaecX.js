@@ -9,8 +9,9 @@ $.ajax({
         <p class="lead">${data.summary}</p>
         <hr class="my-4">
         <p>The company is valued at $${(commaSeparateNumber(data.valuation))}</p>
-        <a class="badge badge-info" href="${data.links.website}" target="_blank" role="button">Website</a><a class="badge badge-primary ml-2" href="${data.links.twitter}" target="_blank" role="button">Twitter</a>
-      </div>`)
+        <div><a class="badge badge-info" href="${data.links.website}" target="_blank" role="button">Website</a><a class="badge badge-primary ml-2" href="${data.links.twitter}" target="_blank" role="button">Twitter</a></div>
+        <sub>sx</sub>
+        </div>`)
     },
     error: function() {
         console.log("error")
@@ -44,6 +45,7 @@ $.ajax({
         <hr class="my-4">
         <a class="badge badge-info" href="${data.links.article_link}" target="_blank" role="button">Article</a>
         <iframe class="mx-auto d-block rounded ytube-vid" src="https://www.youtube.com/embed/${data.links.youtube_id}" width="560" height="315" frameborder="0"></iframe>
+        <sub>sx</sub>
         </div>`)
         // <img src="${data.links.flickr_images[2]}" class="img-fluid rounded mx-auto d-block" alt="launch picture">
         // <p class="h5"></b>The ${xd.rocket_name} had a payload of the ${xd.second_stage.payloads[0].payload_id} as well as the ${xd.second_stage.payloads[1].payload_id}</p>
@@ -65,7 +67,9 @@ $.ajax({
         <p class="h6">${trimmedString}</p>
         <hr class="my-4">
         <p class="lead">${data.details}</p>
-        <iframe id="inlineFrameExample" title="Inline Frame Example" width="100%" height="400" src="${data.links.wikipedia}"> </iframe>`)
+        <iframe id="inlineFrameExample" title="Inline Frame Example" width="100%" height="400" src="${data.links.wikipedia}"> </iframe>
+        <sub>sx</sub>
+        </div>`)
     },
     error: function() {
         console.log("error")
