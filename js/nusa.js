@@ -2,7 +2,8 @@ $.ajax({
     type: "GET",
     url: "https://api.nasa.gov/planetary/apod?api_key=jdTmHkNVCjPFFHXA4IEfRkpmKkb0573O78JpfrgQ",
     success: function(data) {
-        $(".binkbong").append(`<div class="jumbotron">
+        $(".binkbong").append(`<div class="container gr-flex ns" id="nsPix">
+        <div class="jumbotron">
         <h1 class="display-5 text-center">Picture of the Day</h1>
         <img src="${data.hdurl}" class="img-fluid rounded mx-auto d-block" alt="Picture of the Day">
         <blockquote class="blockquote text-center">
@@ -10,7 +11,7 @@ $.ajax({
         <a href="${data.url}" target="_blank" class="disabled">${data.title}</a></cite>
         </blockquote>
         <p class="h6">${data.explanation}</p>
-        <sub>ns</sub></div>`)
+        <sub>ns</sub></div></div>`)
     },
     error: function() {
         console.log("error")
