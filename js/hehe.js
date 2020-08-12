@@ -17,7 +17,7 @@ commaSeparateNumber = (val) => {
 $(`#filter a`).click(function() {
     var refTag = this.id.replace(``, ``),
         refTagSlo = new RegExp(refTag, `i`)
-    var rows = $(`main .stuffs .container .jumbotron`).show()
+    var rows = $(`main .stuffs .container`).show()
     console.log(refTag, refTagSlo);
     if (refTag != `all`) {
         rows.filter(function() {

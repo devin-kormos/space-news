@@ -10,8 +10,8 @@ $.ajax({
         <hr class="my-4">
         <p>The company is valued at $${(commaSeparateNumber(data.valuation))}</p>
         <div><a class="badge badge-info" href="${data.links.website}" target="_blank" role="button">Website</a><a class="badge badge-primary ml-2" href="${data.links.twitter}" target="_blank" role="button">Twitter</a></div>
-        <sub>sx</sub>
-        </div>`)
+        </div>
+        <sub>sx</sub>`)
     },
     error: function() {
         console.log("error")

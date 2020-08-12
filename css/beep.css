@@ -134,6 +134,10 @@ body {
     border-left: 3px inset #fff;
 }
 
+.container sub {
+    display: none;
+}
+
 .ns > .jumbotron {
     border-left-color: #0b3d90;
 }
